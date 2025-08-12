@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+</head>
+<body>
+    <form> <!-- Form, является контейнером для всех элементов формы.-->
+        <fieldset> <!-- группировка связанных элементов формы -->
+        <legend>Личная информация</legend> <!-- добавления заголовка групировки формы -->
+        <label for="name">Name:</label> <!-- связывает текстовую метку с элементом формы -->
+        <input type="text" id="name" name="name" required> <!-- используется для ввода данных пользователем -->
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="" id="password" name="password" required>
+        </fieldset>
+        
+        <fieldset>
+        <legend>Комментанрий</legend>
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br> <!-- используется для многострочного ввода текста -->
+        </fieldset>
+        
+        <fieldset>
+        <legend>Выбор страны</legend>
+        <label for="country">Country:</label>
+        <select id="country" name="country" required> <!-- используется для создания выпадающего списка -->
+            <option value="">Select your country</option> <!-- пункт, который можно выбрать -->
+            <option value="uk">UK</option>
+            <option value="usa">USA</option>
+            <option value="ru">RU</option>
+            <option value="ua">UA</option>
+            <option value="tur">TUR</option>
+            <option value="kz">KZ</option>
+            <option value="afg">AFG</option>
+        </select>
+        <button type="submit">Sent</button> <!-- используется для создания кнопок, которые можно настроить для различных действий. Это кнопка отправки -->
+        <button type="reset">Reset</button> <!-- Это кнопка сброса -->
+        </fieldset>
+    </form>
+</body>
+</html>
